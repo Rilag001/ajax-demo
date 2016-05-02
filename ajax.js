@@ -8,6 +8,6 @@ request.onreadystatechange = function() {
 	consolelog("Någonting händer");
 }
 
-request.open('GET',"http://google.com");
+request.open("GET","http://google.com");
 request.send();
 
