@@ -2,12 +2,12 @@
 // Vi ska använda AJAX för att hämta innehållet på en hemsida
 
 // Påbörja en hämtning
-var request = new XMLHRequest();
+var request = new XMLHttpRequest();
 
 request.onreadystatechange = function() {
 	consolelog("Någonting händer");
 }
 
-request.open("GET","http://google.com");
+request.open("GET","http://mardby.se/AJK15G/lorem_text.php");
 request.send();
 
