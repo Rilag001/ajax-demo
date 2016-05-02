@@ -6,8 +6,12 @@ var request = new XMLHttpRequest();
 
 request.onreadystatechange = function() {
 	console.log("Någonting händer");
-    // I var res (response) finns det information
-    console.log("Svaret (response) är " + request.responseText);
+    
+    if(request.readyState == 4 && request.status == 200){
+    	// I var res (response) finns det information
+    	console.log("Svaret (response) är " + request.responseText);
+    }
+    
 }
 
 request.open("GET","http://mardby.se/AJK15G/lorem_text.php");
