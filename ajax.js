@@ -10,6 +10,10 @@ request.onreadystatechange = function() {
     if(request.readyState == 4 && request.status == 200){
     	// I var res (response) finns det information
     	console.log("Svaret (response) är " + request.responseText);
+        
+        // Spara texten i en var
+        var data = request.responseText;
+        document.write(data);
     }
     
 }
